@@ -10,7 +10,7 @@ const HOST = "0.0.0.0"
 const app = express()
 app.get("/", (req, res) => {
     const msg = process.env.persona ? process.env.persona : 'world'
-    res.send("Hola ${msg}!")
+    res.send(`Hola ${msg}!`)
 })
 
 app.listen(port, HOST)
